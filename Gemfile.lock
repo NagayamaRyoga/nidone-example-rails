@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:NagayamaRyoga/nidone.git
+  revision: 48237308dc106ff0fad351663aa23575b82b98cc
+  branch: master
+  specs:
+    nidone (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -205,6 +212,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
+  nidone!
   puma (~> 4.1)
   rails (~> 6.0.1)
   sass-rails (>= 6)
