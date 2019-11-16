@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+export BOOTSNAP_CACHE_DIR="$PWD/tmp/cache"
+export DISABLE_SPRING=1
+
+rm -rf ./tmp
+
+for i in `seq 10`
+do time ./bin/rails runner '' 2> /dev/null
+done
+
+rm -rf ./tmp
+
+for i in `seq 10`
+do time ENABLE_BOOTSNAP=1 ./bin/rails runner '' 2> /dev/null
+done
