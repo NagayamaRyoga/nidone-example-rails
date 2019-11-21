@@ -3,8 +3,9 @@ export BOOTSNAP_CACHE_DIR="$PWD/tmp/cache"
 export DISABLE_SPRING=1
 
 rm -rf ./tmp
+mkdir -p ./tmp/nidone
 
-echo "=== nidone ==="
+echo "=== nidone (dumper) ==="
 
 time ./bin/rails runner '' 2> /dev/null
 
@@ -14,7 +15,15 @@ for i in `seq 10`
 do time ./bin/rails runner '' 2> /dev/null
 done
 
-rm -rf ./tmp
+echo "=== nidone (bootsnap-like) ==="
+
+time BOOTSNAP_LIKE=1 ./bin/rails runner '' 2> /dev/null
+
+echo "---"
+
+for i in `seq 10`
+do time BOOTSNAP_LIKE=1 ./bin/rails runner '' 2> /dev/null
+done
 
 echo "=== bootsnap ==="
 

@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:NagayamaRyoga/nidone.git
-  revision: 48237308dc106ff0fad351663aa23575b82b98cc
+  revision: eef3e7c0f65c50c7ec7e13a0363c4e6abfa620e3
   branch: master
   specs:
     nidone (0.1.0)
@@ -175,6 +175,7 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.1)
+    stackprof (0.2.13)
     thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -220,6 +221,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)
+  stackprof
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)

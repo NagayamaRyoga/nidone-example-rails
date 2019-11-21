@@ -1,7 +1,14 @@
 ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../Gemfile', __dir__)
 
 require 'bundler/setup' # Set up gems listed in the Gemfile.
-(require 'nidone'; Nidone.setup(cache_path: 'tmp/.nidone')) unless ENV.has_key?("ENABLE_BOOTSNAP")
+unless ENV.has_key?("ENABLE_BOOTSNAP")
+    require 'nidone'
+    if ENV.has_key?"BOOTSNAP_LIKE"
+        Nidone.setup(cache_path: 'tmp/nidone', use_dumper: false)
+    else
+        Nidone.setup(cache_path: 'tmp/nidone-cache', use_dumper: true)
+    end
+end
 
 require 'bootsnap'
 
