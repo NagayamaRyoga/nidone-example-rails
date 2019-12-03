@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:NagayamaRyoga/nidone.git
-  revision: eef3e7c0f65c50c7ec7e13a0363c4e6abfa620e3
+  revision: b9df57f7e3d8df22a5aa3504ef77147c23ce2763
   branch: master
   specs:
     nidone (0.1.0)
@@ -82,7 +82,7 @@ GEM
     concurrent-ruby (1.1.5)
     crass (1.0.5)
     erubi (1.9.0)
-    ffi (1.11.2)
+    ffi (1.11.3)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.7.0)
@@ -93,7 +93,7 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
-    loofah (2.3.1)
+    loofah (2.4.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -202,7 +202,7 @@ GEM
     websocket-extensions (0.1.4)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.2.1)
+    zeitwerk (2.2.2)
 
 PLATFORMS
   ruby
