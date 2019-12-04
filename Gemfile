@@ -28,7 +28,7 @@ gem 'stackprof'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
-gem 'nidone', git: 'git@github.com:NagayamaRyoga/nidone.git', branch: 'master'
+gem 'nidone', git: 'https://github.com/NagayamaRyoga/nidone.git', branch: 'master'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
